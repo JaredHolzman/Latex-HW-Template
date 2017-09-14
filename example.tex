@@ -13,6 +13,7 @@
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage[normalem]{ulem}
+\usepackage{fitch}
 \graphicspath{ {images/} }
 \hypersetup{
     colorlinks=true,
@@ -63,8 +64,8 @@
 % ---- Random Helpful Stuff ----
 \newenvironment{letenum}{\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
 
-\newcommand{\fa}[1]{\forall #1 :}        % Good examples of how to add shortcuts
-\newcommand{\ex}[1]{\exists #1 :}       % for text you find youself often typing 
+\newcommand{\fra}[1]{\forall #1 :}        % Good examples of how to add shortcuts
+\newcommand{\exs}[1]{\exists #1 :}       % for text you find youself often typing 
 \newcommand{\todo}[1]{\textbf{TODO: #1}\\}
     
 \setlength{\parindent}{0pt}
@@ -316,6 +317,24 @@ been omitted from this template.
   shamelessly stolen from a multitude of other \LaTeX \; templates and forum
   comments. I never kept any sort of running list, so I can only thank the
   fantastic online \LaTeX\; community.
+\end{question}
+
+\begin{question}{Problem 7}{Fitch}
+  \href{http://www.logicmatters.net/resources/fitchguide.txt}{Fitch} is a package for formating logical proofs.
+  \begin{equation*}
+    \begin{fitch}
+      % Transcribe the thing you are trying to prove here.
+      \fa q \rightarrow (p \rightarrow r) & Premise 1 \\
+      \fa \neg r & Premise 2 \\
+      \fj q & Premise 3 \\
+      \fa p \rightarrow r & MP| $\rightarrow_e$ on (1,3) \\
+      \fa \fh p & Assume\\
+      \fa \fa r & MP| $\rightarrow_e$ (4,5) \\
+      \fa \fa r \wedge \neg r & $\wedge_i$ (6,2) \\
+      \fa \fa \bot & $\neg e$ \\
+      \fa \neg p & $\neg_i$ (4-8) \\
+    \end{fitch}
+  \end{equation*}
 \end{question}
 
 \end{document}
