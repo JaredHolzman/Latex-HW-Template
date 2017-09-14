@@ -1,0 +1,141 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{changepage}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{tikz}
+\graphicspath{ {images/} }
+
+% ------------------------------ Helpful commands ------------------------------
+
+% ---- Question Environment ----
+\def\questionskip{\bigskip} % space before each question section
+\def\questiontitleskip{\medskip} % space above and below question header
+\def\questionleftpadding{0em} % left margin for question section 
+\def\questionrightpadding{0em} % right margin for question question 
+
+\newenvironment{question}[2]{ % 2 arguments - question number, question title
+  \questionskip
+  \hrule
+  \questiontitleskip
+  \noindent{\bf #1: #2}
+  \questiontitleskip
+  \hrule \vspace{.10in}
+  \begin{adjustwidth}{\questionleftpadding}{\questionrightpadding}
+}{
+  \end{adjustwidth}
+}
+% ----------------------------
+
+% ---- Answer Environment ----
+\def\answerskip{\smallskip} % space before each answer section
+\def\answerleftpadding{1.5em} % left margin for answer section 
+\def\answerrightpadding{1.5em} % right margin for answer section 
+
+\newenvironment{answer}
+{
+  \answerskip
+  \color{blue}
+  \begin{adjustwidth}{\answerleftpadding}{\answerrightpadding}
+  \ttfamily
+}{
+  \end{adjustwidth}
+}
+% ----------------------------
+
+\newenvironment{letenum}{\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
+
+% ---- Random Helpful Stuff ----
+\newcommand{\fa}[1]{\forall #1 :}        % Good examples of how to add shortcuts
+\newcommand{\ex}[1]{\exists #1 :}       % for text you find youself often typing 
+\newcommand{\todo[1]}{\textbf{TODO: #1}\\}
+    
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+% ----------------------------
+
+% ------------------------------------------------------------------------------
+
+% ----------------------------- Page Styling & Header --------------------------
+
+\newcommand{\myname}{FirstName LastName}
+\newcommand{\myemail}{myemail@university.edu}
+\newcommand{\mystudentid}{123456789}
+\newcommand{\myclass}{CS-101 }
+\newcommand{\myhwnum}{\#4}
+
+\oddsidemargin0cm
+\topmargin-2cm            % I recommend adding these three lines to increase the
+\textwidth16.5cm           % amount of usable space on the page (and save trees)
+\textheight23.5cm
+
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{HW\myhwnum}}}        % Note the different brackets!
+\rhead{\fancyplain{\myname\\ Student ID: \mystudentid}{\myname\\ \myemail}}
+
+\begin{document}
+
+\thispagestyle{plain}
+\begin{flushright}
+\textbf{Worked With:}\\
+Best Friend1\\
+Best Friend2\\
+Best Friend3\\
+\end{flushright}
+
+\begin{center}                                      % Center the following lines
+{\Large \myclass Assignment \myhwnum} \\
+\myemail\\
+\today\\
+\end{center}
+% ------------------------------------------------------------------------------
+
+\begin{question}{Problem 1}{}
+  \begin{answer}
+  \end{answer}
+\end{question}
+
+
+\begin{question}{Problem 2}{}
+\end{question}
+
+\begin{question}{Problem 3}{}
+\end{question}
+
+\begin{question}{Problem 4}{}
+\end{question}
+
+
+\begin{question}{Problem 5}{}
+\end{question}
+
+\begin{question}{Problem 6}{}
+\end{question}
+
+\begin{question}{7}{Problem @}
+\end{question}
+
+\begin{question}{8}{Problem @}
+\end{question}
+
+\begin{question}{9}{Problem @}
+\end{question}
+
+\begin{question}{10}{Problem @}
+\end{question}
+
+\begin{question}{11}{Problem @}
+\end{question}
+
+\begin{question}{12}{Problem @}
+\end{question}
+
+\end{document}
