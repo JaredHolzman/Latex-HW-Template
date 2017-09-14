@@ -10,4 +10,3 @@ Run `sudo apt install texlive-full`
 
 ## Arch
 Run `sudo pacman -S --needed texlive-most`
-
