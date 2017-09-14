@@ -1,5 +1,5 @@
 # LaTeX HW Template
-This is a simple LaTeX template for homework. Most of the instructions about the template (and examples of LaTeX) can be found in the example.pdf file. 
+This is a simple LaTeX template for homework. Most of the instructions about the template (and examples of LaTeX) can be found in the [example.pdf](https://github.com/JaredHolzman/Latex-HW-Template/blob/master/example.pdf) file. 
 
 # Installing LaTeX
 ## Mac and Windows
