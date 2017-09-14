@@ -256,7 +256,7 @@ been omitted from this template.
   
 \end{question}
 
-\begin{question}{Problem 5}{Graphs and Graphics}
+\begin{question}{Problem 5}{Graphs, Graphics, and Tables}
   If you need to draw any sort of graph, DFA, etc., I highly recommend
   \href{http://madebyevan.com/fsm/}{Even Wallace's DFA creator}. You can create
   something graphically and then export it to LaTeX.
@@ -294,13 +294,28 @@ been omitted from this template.
    \includegraphics[scale=1.5]{puppy.jpg}
  \end{center}
 
+ You can use the \texttt{tabular} environment for tables. The ampersand ({\bf
+   \&}) is used to specify one cell from another and is the common operator for
+ most alignment operations in LaTeX.\\
+
+ \medskip
+ 
+ \begin{tabular}{ c | c | c | c | c | c | c  }
+   & A & B & C & D & E & F \\
+   \hline
+   One & 0 & 0 & 0 & 0 & 0 & 0 \\
+   Two & 0 & 0 & 0 & 0 & 0 & 0 \\
+   Three & 0 & 0 & 0 & 0 & 0 & 0 \\
+   Four & 0 & 0 & 0 & 0 & 0 & 0 \\
+ \end{tabular}
+
 \end{question}
 
 \begin{question}{Problem 6}{Acknowledgements}
   As with most \LaTeX \; documents, this template \sout{was inspired by}
-  shamelessly stolen from a multitude of other \LaTeX templates and forum
+  shamelessly stolen from a multitude of other \LaTeX \; templates and forum
   comments. I never kept any sort of running list, so I can only thank the
-  fantastic \LaTeX\; community.
+  fantastic online \LaTeX\; community.
 \end{question}
 
 \end{document}
