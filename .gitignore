@@ -1,6 +1,7 @@
 *.aux
 *.el
 *.log
+*.gz
 *.dvi
 *.out
 *.cpt
