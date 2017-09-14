@@ -3,7 +3,7 @@ This is a simple LaTeX template for homework.
 
 The "homework_template.tex" file is the template that you can use and add your work to.
 
-An [example.pdf](https://github.com/JaredHolzman/Latex-HW-Template/blob/master/example.pdf) file is also included and most of the instructions about the template and examples of LaTeX commands. Run the `remove-example.sh` script to delete the example file if you no longer need it.
+An [example.pdf](https://github.com/JaredHolzman/Latex-HW-Template/blob/master/example.pdf) file is also included and contains info about the template and examples of LaTeX commands. Run the `remove-example.sh` script to delete the example file if you no longer need it.
 
 
 # Installing LaTeX
