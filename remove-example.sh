@@ -4,4 +4,4 @@
 make clean
 rm ./images/puppy.jpg
 rm example.tex
-rm example.pdf
+rm remove-example.sh
