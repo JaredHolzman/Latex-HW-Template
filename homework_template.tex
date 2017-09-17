@@ -27,7 +27,13 @@
   \questionskip
   \hrule
   \questiontitleskip
+  \ifx&#2&%
+  % title is empty
+  \noindent{\bf #1}
+  \else
+  % title is nonempty
   \noindent{\bf #1: #2}
+  \fi
   \questiontitleskip
   \hrule \vspace{.10in}
   \begin{adjustwidth}{\questionleftpadding}{\questionrightpadding}
@@ -135,7 +141,7 @@
 \begin{question}{Problem 11}{}
 \end{question}
 
-\begin{question}{Peoblem 12}{}
+\begin{question}{Problem 12}{}
 \end{question}
 
 \end{document}
