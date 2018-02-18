@@ -1,19 +1,10 @@
 \documentclass[11pt]{article}
 
-\usepackage{algpseudocode}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{homework_template}
 \usepackage{hyperref}
-\usepackage{fancyhdr}
-\usepackage{changepage}
-\usepackage{amsthm}
-\usepackage{graphicx}
-\usepackage{listings}
-\usepackage{color}
-\usepackage{enumitem}
-\usepackage{tikz}
 \usepackage[normalem]{ulem}
 \usepackage{fitch}
+
 \graphicspath{ {images/} }
 \hypersetup{
     colorlinks=true,
@@ -21,80 +12,7 @@
     filecolor=magenta,      
     urlcolor=cyan,
 }
- 
 \urlstyle{same}
-
-% ------------------------------ Helpful commands ------------------------------
-
-% ---- Question Environment ----
-\def\questionskip{\bigskip} % space before each question section
-\def\questiontitleskip{\medskip} % space above and below question header
-\def\questionleftpadding{0em} % left margin for question section 
-\def\questionrightpadding{0em} % right margin for question question 
-
-\newenvironment{question}[2]{ % 2 arguments - question number, question title
-  \questionskip
-  \hrule
-  \questiontitleskip
-  \ifx&#2&%
-  % title is empty
-  \noindent{\bf #1}
-  \else
-  % title is nonempty
-  \noindent{\bf #1: #2}
-  \fi
-  \questiontitleskip
-  \hrule \vspace{.10in}
-  \begin{adjustwidth}{\questionleftpadding}{\questionrightpadding}
-}{
-  \end{adjustwidth}
-}
-% ----------------------------
-
-% ---- Answer Environment ----
-\def\answerskip{\smallskip} % space before each answer section
-\def\answerleftpadding{1.5em} % left margin for answer section 
-\def\answerrightpadding{4em} % right margin for answer section 
-
-\newenvironment{answer}
-{
-  \answerskip
-  \color{blue}
-  \begin{adjustwidth}{\answerleftpadding}{\answerrightpadding}
-  \ttfamily
-}{
-  \end{adjustwidth}
-}
-% ----------------------------
-
-% ---- Random Helpful Stuff ----
-\newenvironment{letenum}{\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
-
-\newcommand{\fra}[1]{\forall #1 :}        % Good examples of how to add shortcuts
-\newcommand{\exs}[1]{\exists #1 :}       % for text you find youself often typing 
-\newcommand{\todo}[1]{\textbf{TODO: #1}\\}
-% ----------------------------
-
-% ------------------------------------------------------------------------------
-
-% ----------------------------- Page Styling & Header --------------------------
-
-\newcommand{\myname}{FirstName LastName}
-\newcommand{\myemail}{myemail@university.edu}
-\newcommand{\mystudentid}{123456789}
-\newcommand{\myclass}{CS-101 }
-\newcommand{\myhwnum}{\#1}
-
-\oddsidemargin0cm
-\topmargin-2cm            % I recommend adding these lines to increase the
-\textwidth16.5cm           % amount of usable space on the page (and save trees)
-\textheight23.5cm
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt plus 1pt}
-
-\pagestyle{fancyplain}
-\lhead{\fancyplain{}{\textbf{HW\myhwnum}}}        % Note the different brackets!
-\rhead{\fancyplain{\myname\\ Student ID: \mystudentid}{\myname\\ \myemail}}
 
 \begin{document}
 
@@ -320,7 +238,8 @@ been omitted from this template.
 \end{question}
 
 \begin{question}{Problem 6}{Fitch}
-  \href{http://www.logicmatters.net/resources/fitchguide.txt}{Fitch} is a package for formating logical proofs.
+  \href{http://www.logicmatters.net/resources/fitchguide.txt}{Fitch} is a
+  package for formating logical proofs.
   \begin{equation*}
     \begin{fitch}
       % Transcribe the thing you are trying to prove here.
